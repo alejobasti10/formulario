@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Aplicación</title>
+  <style type="text/css">
+       body{
+            margin: 1;                    
+            border: 10px solid black;          
+            background-position: center;            
+            background: linear-gradient(#136a8a, #267871);
+        }                  
+         
+        #header {
+          margin-top:30;
+          position: 0;
+          font-family:Arial, Helvetica, sans-serif;
+          font-size: 16pt                
+        }
+         
+        ul, ol {
+          list-style:none;
+        }
+         
+        .nav > li {
+          float: none;
+        }
+         
+        .nav li a {            
+            color: white;
+            text-decoration:none;                  
+            padding:10px 12px;
+            text-align: top;
+            font-weight: normal;
+            
+        }
+         
+        .nav li ul {
+          display:none;            
+        }
+         
+        .nav li:hover > ul {
+            display:block;
+            position:top;
+        }        
+         
+  </style>    
+</head>
+
+<body>
+  <div id = "root"></div>
+  <div id="header">
+      <ul class="nav">
+          <li><a href="/ejercicios">Inicio</a></li>
+          <li><a href="">Crear Nueva Tarjeta</a>
+              <ul>
+                  <li><a href="/ejercicios/nuevo">Ir a Crear</a></li>
+              </ul>
+          </li>
+      </ul>
+  </div>
+</body>
+</html>
